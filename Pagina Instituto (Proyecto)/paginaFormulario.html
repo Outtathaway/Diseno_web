@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>IES mar de Cádiz</title>
+        <link rel="shortcut icon" href="images/mar.png">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="cssInicioFormulario.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet"> 
+    </head>
+    <body>
+        <!--Cabecera de la pagina-->
+        <header class="container">
+            <div id="logo">
+                <a id="aimg" href="paginaInicio.html"><img id="mar" src="images/mar.png" alt="logo"></a>
+                <p id="primero" >IES</p>
+                <p id="segundo">Mar de Cádiz</p>
+         
+            </div>
+            <div id="seg">
+              <button class="btn btn-outline-primary">Log-in <img id="icono" src="images/_SVG/iconmonstr-log-out-3-240.png" alt=""></button>
+              <button class="btn btn-outline-primary">Registrarse <img id="icono" src="images/_SVG/iconmonstr-pen-1-240.png" alt=""></button>
+              <button class="btn btn-outline-primary">Usuario <img id="icono" src="images/_SVG/iconmonstr-user-6-240.png" alt=""></button>
+              <button class="btn btn-outline-primary" id="buscar">buscar <img id="icono" src="images/_SVG/iconmonstr-magnifier-4-240.png" alt=""> </button>
+
+     </div>       
+         </header>
+         <!--Cuerpo de la pagina-->
+        <div id="construccion"   class="container mx-auto">
+           
+            <main id="constr">
+                <div class="container">
+
+                    <form class="well form-horizontal" action=" " method="post"  id="contact_form">
+                <fieldset>
+                
+                <!-- Form Name -->
+                <legend>Registrarse en actividad extraescolar</legend>
+                
+                <div class="form-group"> 
+                    <label class="visually">Actividad extraescolar *</label>
+                      <div class="col-md-4 selectContainer">
+                      <select name="state" class="form-select" required>
+                        <option hidden selected>Selecciona actividad extraescolar</option>
+                        <option value="1">Futbol</option>
+                        <option value="2">Baloncesto</option>
+                        <option value="3">Ping-pong</option>
+                        <option value="4">Balonmano</option>
+                        <option value="5">Atletismo</option>
+                        <option value="6">Voleibol</option>
+                        <option value="7">Tenis</option>
+                        <option value="8">Taller de Manualidades</option>
+                        <option value="9">Petanca extrema</option>
+                      </select>
+                   </div>
+                  </div>
+                <!-- Text input-->
+                
+                <div class="form-group">
+                  <label class="col-md-4 control-label">Nombre *</label>  
+                  <div class="col-md-4 inputGroupContainer">
+                  <div class="input-group">
+                  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                  <input  name="first_name" placeholder="Nombre" class="form-control"  type="text" required>
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- Text input-->
+                
+                <div class="form-group">
+                  <label class="col-md-4 control-label" >Apellidos *</label> 
+                    <div class="col-md-4 inputGroupContainer">
+                    <div class="input-group">
+                  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                  <input name="last_name" placeholder="Apellidos" class="form-control"  type="text" required>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Text input-->
+                
+                <div class="form-group">
+                    <label class="col-md-4 control-label" >DNI *</label> 
+                      <div class="col-md-4 inputGroupContainer">
+                      <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                    <input name="last_name" placeholder="00000000A" class="form-control"  type="text" required pattern="[0-9]{8}[A-Z]{1}">
+                      </div>
+                    </div>
+                  </div>
+                
+                          <!-- radio checks -->
+                          <div class="form-group">
+                            <label class="col-md-4 control-label">Sexo</label>
+                            <div class="col-md-4">
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="hosting" value="yes" /> Masculino
+                                    </label>
+                                </div>
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="hosting" value="no" /> Femenino
+                                    </label>
+                                </div>
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="hosting" value="no" /> Otro
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                <!-- Text input-->
+                       <div class="form-group">
+                  <label class="col-md-4 control-label">Direccion de Email *</label>  
+                    <div class="col-md-4 inputGroupContainer">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                  <input name="email" placeholder="Email@ejemplo.com" class="form-control"  type="email" required>
+                    </div>
+                  </div>
+                </div>
+                
+                
+                <!-- Text input-->
+                       
+                <div class="form-group">
+                  <label class="col-md-4 control-label">Telefono *</label>  
+                    <div class="col-md-4 inputGroupContainer">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+                  <input name="phone" placeholder="000000000" class="form-control" type="text" required pattern="[0-9]{9}">
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- Text input-->
+                      
+                <div class="form-group">
+                  <label class="col-md-4 control-label">Direccion de residencia</label>  
+                    <div class="col-md-4 inputGroupContainer">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+                  <input name="address" placeholder="C/Nombrecalle nº5 4B" class="form-control" type="text">
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- Select Basic -->
+                   
+                <div class="form-group"> 
+                  <label class="visible">Provincia de residencia</label>
+                    <div class="col-md-4 selectContainer">
+                    <select name="state" class="form-select" required>
+                      <option hidden selected>Provincia de residencia</option>
+                      <option value="1">Almería</option>
+                      <option value="2">Cádiz</option>
+                      <option value="3">Córdoba</option>
+                      <option value="4">Granada</option>
+                      <option value="5">Huelva</option>
+                      <option value="6">Jaén</option>
+                      <option value="7">Málaga</option>
+                      <option value="8">Sevilla</option>
+                      <option value="9">Los Santos</option>
+                    </select>
+                  
+                  </div>
+                </div>
+                <!-- Text input-->
+                 
+                <div class="form-group">
+                  <label class="col-md-4 control-label">Ciudad de residencia</label>  
+                    <div class="col-md-4 inputGroupContainer">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+                  <input name="city" placeholder="El Muerto de Sta Maria" class="form-control"  type="text">
+                    </div>
+                  </div>
+                </div>
+                
+                
+                
+                <!-- Text input-->
+                
+                <div class="form-group">
+                  <label class="col-md-4 control-label">Código postal</label>  
+                    <div class="col-md-4 inputGroupContainer">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+                  <input name="zip" placeholder="00000" class="form-control"  type="text">
+                    </div>
+                </div>
+                </div>
+                
+                <!-- radio checks -->
+                 <div class="form-group">
+                                        <label class="col-md-4 control-label">¿Está apuntado en alguna otra actividad?</label>
+                                        <div class="col-md-4">
+                                            <div class="radio">
+                                                <label>
+                                                    <input type="radio" name="hosting" value="yes" /> Si
+                                                </label>
+                                            </div>
+                                            <div class="radio">
+                                                <label>
+                                                    <input type="radio" name="hosting" value="no" /> No
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                <!-- Text area -->
+                  
+                <div class="form-group">
+                  <label class="col-md-4 control-label">Informacion Adicional que desee aportar</label>
+                    <div class="col-md-4 inputGroupContainer">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+                            <textarea class="form-control" name="comment" placeholder="Escribe aquí"></textarea>
+                  </div>
+                  </div>
+                </div>
+                
+                <!-- Button -->
+                <div class="form-group">
+                  <label class="col-md-4 control-label"></label>
+                  <div class="col-md-4">
+                    <button type="submit" class="btn btn-success" >Enviar <span class="glyphicon glyphicon-send"></span></button>
+                  </div>
+                </div>
+                
+                </fieldset>
+                </form>
+                </div>
+                <br>
+                <a href="paginaInicio.html">Volver al inicio</a>
+              </main>
+             
+        </div>
+        <!--Pie de la pagina-->
+        <footer class="container">
+            <div id="info">
+                <p>
+                    IES Mar de Cádiz. Avenida de Rafael Alberti s/n. El Puerto de Santa María. Tfn: 956243128
+                    Seneca | Pasen | Junta de Andalucia | Consejería de Educación | Delegación de Cádiz | BOJA
+                    </p>
+                    <img src="images/gob.png" alt="ladrones de España">
+            </div>
+            <div id="rs">  
+                <img id="tw" src="images/tw.png" alt="twitter">
+                <img id="ig" src="images/ig.png" alt="instagram">
+                <img id="fb" src="images/fb.png" alt="facebook">
+                <img id="tl" src="images/tl.png" alt="telegram">
+            </div>
+
+        </footer>
+
+
+    </body>
+</html>

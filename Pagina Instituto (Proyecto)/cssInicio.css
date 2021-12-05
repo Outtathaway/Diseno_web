@@ -1,0 +1,271 @@
+/*Estilo del cuerpo de la pagina en general*/
+body
+{
+    height: 100%;
+    width: 100%;
+    background: #D0E4F5 url("images/back.png") no-repeat scroll 0 0;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/*Estilo de la cabecera de la pagina*/
+header
+{
+
+    display: grid;
+    height: 200px;
+    background-color: rgba(127, 207, 218, 0.699);
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 10px;
+    border-radius: 20px;
+    border: 3px ridge rgba(28,110,164,0.3);
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 0px 17px 19px 0px rgba(0,0,0,0.38); 
+    box-shadow: 0px 10px 13px -7px #000000, 0px 17px 19px 0px rgba(0,0,0,0.38);
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: repeat(1, 1fr); 
+
+}
+
+   div#logo
+   {
+
+    display: flex;
+    justify-content: flex-start;
+    font-family: 'comfortaa';
+    align-items: flex-end;
+
+   }
+   div#logo p
+   {
+
+       margin: 5px;
+       margin-bottom: 20px;
+       font-family: 'Comfortaa';
+       text-shadow: 6px 4px 6px #404040;
+
+   }
+
+       div#logo p#primero
+       {
+
+           font-size: 45px;
+
+       }
+
+       div#logo p#segundo
+       {
+
+           font-size: 35px;
+       }
+       a img#mar
+    {
+
+        margin: 10%;
+        width: 150px;
+        height: 150px;
+
+    }
+
+    div#seg
+   {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: flex-end;
+    font-family: 'comfortaa';
+   }
+        div#seg button
+        {
+            color: black;
+            text-align: left;
+             -webkit-box-shadow: 4px 7px 19px -1px rgba(0,0,0,0.8); 
+            box-shadow: 4px 7px 19px -1px rgba(0,0,0,0.8);
+            align-self: flex-end;
+            margin-bottom: 10px;
+            margin-right: 10px;
+            font-size: 15px;
+        }
+        
+        img#icono
+    {
+
+        width: 17px;
+        height: 17px;
+        margin: 2px;
+
+    }
+
+/*Estilo del cuerpo con contenido de la pagina*/
+div#principal
+{
+
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 10px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-rows: repeat(1, 1fr); 
+    width: 96%;
+  
+}
+    div#nav {
+        padding: 2em;
+        background-color: rgba(127, 207, 218, 0.699);
+        border-radius: 20px;
+        border: 3px ridge rgba(28,110,164,0.3);
+        -webkit-box-shadow: 0px 10px 13px -7px #000000, 0px 17px 19px 0px rgba(0,0,0,0.38); 
+        box-shadow: 0px 10px 13px -7px #000000, 0px 17px 19px 0px rgba(0,0,0,0.38);
+        margin-right: 30px;
+        
+    }
+        div#nav div
+        {
+        margin-bottom: 40px;
+        font-family: 'Comfortaa';
+        font-size: 25px;
+        }
+        div#nav div a
+        {
+
+            color: black;
+            text-align: left;
+             -webkit-box-shadow: 4px 7px 19px -1px rgba(0,0,0,0.8); 
+            box-shadow: 4px 7px 19px -1px rgba(0,0,0,0.8);
+        }
+
+        div#main {
+        padding: 1em;
+        background-color: rgba(127, 207, 218, 0.699);
+        border-radius: 20px;
+        border: 3px ridge rgba(28,110,164,0.3);
+        -webkit-box-shadow: 0px 10px 13px -7px #000000, 0px 17px 19px 0px rgba(0,0,0,0.38); 
+        box-shadow: 0px 10px 13px -7px #000000, 0px 17px 19px 0px rgba(0,0,0,0.38);
+        margin-right: 30px;
+        }
+        div#main p{
+
+            font-family: 'Comfortaa';
+            font-size: 18px;
+            text-align: justify;
+
+        }
+        div#aside {
+        padding: 1em;
+        background-color: rgba(127, 207, 218, 0.699);
+        border-radius: 20px;
+        border: 3px ridge rgba(28,110,164,0.3);
+        -webkit-box-shadow: 0px 10px 13px -7px #000000, 0px 17px 19px 0px rgba(0,0,0,0.38); 
+        box-shadow: 0px 10px 13px -7px #000000, 0px 17px 19px 0px rgba(0,0,0,0.38);
+        }
+        div#aside iframe
+        {
+            margin: 2%;
+            background-color: rgba(127, 207, 218, 0.699);
+            border-radius: 15px;
+            border: 3px ridge rgba(28,110,164,0.3);
+            -webkit-box-shadow: 0px 10px 13px -7px #000000, 0px 17px 19px 0px rgba(0,0,0,0.38); 
+            box-shadow: 0px 10px 13px -7px #000000, 0px 17px 19px 0px rgba(0,0,0,0.38);
+        }
+        
+/*Estilo del pie de la pagina*/
+footer
+{
+    font-family: 'Comfortaa';
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: repeat(1, 1fr);
+    width: 96%;
+    height: 200px;
+    background-color: rgba(127, 207, 218, 0.699);
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 10px;
+    border-radius: 20px;
+    border: 3px ridge rgba(28,110,164,0.3);
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 0px 17px 19px 0px rgba(0,0,0,0.38); 
+    box-shadow: 0px 10px 13px -7px #000000, 0px 17px 19px 0px rgba(0,0,0,0.38);
+
+}
+    div#info
+    {
+        width: 90%;
+        display: flex;
+        flex-direction:column;
+    }
+
+        div#info p
+        {
+            margin-left: 20px;
+            font-size: 15px;
+        }
+        div#info img
+        {
+            margin-left: 20px;
+            width:70% ;
+        }
+    div#rs
+    {
+        width: 90%;
+        display: flex;
+        flex-direction:row;
+        align-items: center;
+        justify-content: space-around;
+    }
+        div#rs img
+        {
+            width: 75px;
+            height: 75px;
+            margin: 2%;
+        }
+/*Estilo para la pagina en construccion*/
+
+div#construccion
+{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(1, 1fr); 
+    width: 96%;
+}
+
+main#constr {
+    font-family: 'Comfortaa';
+    margin-left: 20px;
+    padding: 1em;
+    flex-basis: 35%;
+    background-color: rgba(127, 207, 218, 0.699);
+    border-radius: 20px;
+    border: 3px ridge rgba(28,110,164,0.3);
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 0px 17px 19px 0px rgba(0,0,0,0.38); 
+    box-shadow: 0px 10px 13px -7px #000000, 0px 17px 19px 0px rgba(0,0,0,0.38);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    }
+
+img#mant
+{
+
+align-self: center;
+width: 50%;
+
+}
+
+main#constr h1
+{
+
+align-self: center;
+text-shadow: 6px 4px 6px #404040;
+
+}
+main#constr a
+{
+
+align-self: center;
+text-shadow: 6px 4px 6px #404040;
+font-size: 1.5em;
+margin-top: 10px;
+color: black;
+}
